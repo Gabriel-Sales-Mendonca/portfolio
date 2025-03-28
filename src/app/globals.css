@@ -23,11 +23,11 @@ body {
 }
 
 .section-projects > div {
-  @apply bg-red-300 w-[350px] h-[500px] m-4 rounded-3xl text-center flex flex-col justify-between
+  @apply bg-red-300 w-[350px] h-[500px] m-4 rounded-3xl text-center flex flex-col justify-between overflow-hidden transition-transform duration-300 hover:scale-105
 }
 
 .image-projects {
-  @apply h-[55%]
+  @apply h-[55%] 
 }
 
 .image-projects > img {
