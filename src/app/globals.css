@@ -1,26 +1,67 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(41, 39, 39);
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.navigation > div > a {
+  @apply h-[50px] flex items-center px-4 rounded-full
+}
+
+.navigation > div > a:hover {
+  @apply cursor-pointer text-black bg-white transition duration-600
+}
+
+.section-projects > div {
+  @apply bg-red-300 w-[350px] h-[500px] m-4 rounded-3xl text-center flex flex-col justify-between
+}
+
+.image-projects {
+  @apply h-[55%]
+}
+
+.image-projects > img {
+  @apply rounded-t-3xl
+}
+
+.desc-projects {
+  @apply bg-zinc-600 h-[45%] rounded-b-3xl text-white p-2 flex flex-col justify-between
+}
+
+.desc-projects > h3 {
+  @apply text-xl font-bold
+}
+
+.desc-projects > p {
+  @apply text-base m-2 text-justify
+}
+
+.desc-projects > span {
+  @apply text-base font-bold m-2
+}
+
+.section-technologies > * {
+  @apply mx-[40px] w-[30%]
+}
+
+.section-technologies > * > h3 {
+  @apply text-center
+}
+
+.show-tec > span {
+  @apply m-[5px] bg-zinc-600 rounded-[5px] p-2 h-[40px] hover:bg-blue-700
+}
+
+.image {
+  box-shadow: 0px 0px 20px 15px rgba(43, 43, 43, 0.5); /*rgba(0, 0, 0, 0.5)*/
 }
