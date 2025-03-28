@@ -23,11 +23,11 @@ body {
 }
 
 .section-projects > div {
-  @apply bg-red-300 w-[350px] h-[500px] m-4 rounded-3xl text-center flex flex-col justify-between overflow-hidden transition-transform duration-300 hover:scale-105
+  @apply bg-red-300 w-[400px] h-[500px] m-3 rounded-3xl text-center flex flex-col justify-between overflow-hidden transition-transform duration-300 hover:scale-105
 }
 
 .image-projects {
-  @apply h-[55%] 
+  @apply h-[50%] 
 }
 
 .image-projects > img {
@@ -35,7 +35,7 @@ body {
 }
 
 .desc-projects {
-  @apply bg-zinc-600 h-[45%] rounded-b-3xl text-white p-2 flex flex-col justify-between
+  @apply bg-zinc-600 h-[50%] rounded-b-3xl text-white p-2 flex flex-col justify-between
 }
 
 .desc-projects > h3 {

@@ -88,8 +88,8 @@ export default function Home() {
             </div>
             <div className="desc-projects">
               <h3>Controle de Estoque</h3>
-              <p className="">Gerenciador de estoque com autenticação JWT, controle de quantidades e organização dos produtos por categorias.</p>
-              <span>Node.js | React | CSS</span>
+              <p>Gerenciador de estoque, que inclui autenticação via <span className="font-bold">JWT</span>, geração de hash para senhas, organização de Produtos por Categorias, além do controle de estoque. Fiz <span className="font-bold">API e Front</span>.</p>
+              <span>Node.js | React | MongoDB | Axios</span>
               <div className="flex justify-center">
               <button className="bg-white rounded-xl w-30 cursor-pointer text-black hover:bg-blue-700 hover:text-white mr-2">Deploy</button>
               <button className="bg-white rounded-xl w-30 cursor-pointer text-black hover:bg-blue-700 hover:text-white ml-2">GitHub</button>
