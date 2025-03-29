@@ -30,7 +30,7 @@ body {
   @apply h-[50%] cursor-pointer overflow-hidden
 }
 
-.image-projects > img {
+.image-projects img {
   @apply rounded-t-3xl hover:brightness-125
 }
 
@@ -54,7 +54,7 @@ body {
   @apply text-base font-bold m-2
 }
 
-.desc-projects button {
+.desc-projects a {
   @apply bg-white rounded-xl w-30 cursor-pointer text-black hover:bg-blue-700 hover:text-white
 }
 

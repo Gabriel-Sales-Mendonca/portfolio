@@ -84,7 +84,9 @@ export default function Home() {
         <div className="section-projects text-black w-full px-[8%] flex flex-grow flex-wrap justify-center items-center">
           <div>
             <div className="image-projects relative group">
-              <Image src={ControlaEstoqueImage} alt="Projeto Controla Estoque" />
+              <Link href={"https://controlaestoque.netlify.app/"} target="_blank" rel="noopener noreferrer" className="mr-2">
+                <Image src={ControlaEstoqueImage} alt="Projeto Controle de Estoque" />
+              </Link>
             </div>
             <div className="desc-projects">
               <h3><span>Full Stack</span> - Controle de Estoque</h3>
@@ -94,31 +96,35 @@ export default function Home() {
               <span>Node.js | React | MongoDB | Axios</span>
 
               <div className="flex justify-center">
-                <button className="mr-2">Ver Projeto</button>
-                <button className="ml-2">Código</button>
+                <Link href={"https://controlaestoque.netlify.app/"} target="_blank" rel="noopener noreferrer" className="mr-2">Ver Projeto</Link>
+                <Link href={"https://github.com/Gabriel-Sales-Mendonca/api-controla-estoque"} target="_blank"  rel="noopener noreferrer" className="ml-2">Código</Link>
               </div>
             </div>
           </div>
           <div>
             <div className="image-projects">
-              <Image src={ListaDeTarefasImage} alt="Projeto Lista de Tarefas" />
+              <Link href={"https://tarefas-gabrielsales.netlify.app/"} target="_blank" rel="noopener noreferrer" className="mr-2">
+                <Image src={ListaDeTarefasImage} alt="Projeto Lista de Tarefas" />
+              </Link>
             </div>
             <div className="desc-projects">
               <h3><span>Frontend</span> - Lista de Tarefas</h3>
 
-              <p className="">Gerenciador de Tarefas, que permite ao usuário cadastrar, editar e excluir tarefas.</p>
+              <p>Gerenciador de Tarefas, que permite ao usuário cadastrar, editar e excluir tarefas.</p>
 
               <span>React | JavaScript | CSS</span>
 
-              <div className="flex justify-center text-black">
-                <button className="mr-2">Ver Projeto</button>
-                <button className="ml-2">Código</button>
+              <div className="flex justify-center">
+                <Link href={"https://tarefas-gabrielsales.netlify.app/"} target="_blank" rel="noopener noreferrer" className="mr-2">Ver Projeto</Link>
+                <Link href={"https://github.com/Gabriel-Sales-Mendonca/lista-de-tarefas"} target="_blank"  rel="noopener noreferrer" className="ml-2">Código</Link>
               </div>
             </div>
           </div>
           <div>
             <div className="image-projects">
-              <Image src={CalculadoraImage} alt="Projeto Calculadora" />
+              <Link href={"https://calculadora-gabrielsales.netlify.app/"} target="_blank" rel="noopener noreferrer" className="mr-2">
+                <Image src={CalculadoraImage} alt="Projeto Calculadora" />
+              </Link>
             </div>
             <div className="desc-projects">
               <h3><span>Frontend</span> - Calculadora</h3>
@@ -128,14 +134,16 @@ export default function Home() {
               <span>JavaScript | HTML | CSS</span>
 
               <div className="flex justify-center">
-                <button className="mr-2">Ver Projeto</button>
-                <button className="ml-2">Código</button>
+                <Link href={"https://calculadora-gabrielsales.netlify.app/"} target="_blank" rel="noopener noreferrer" className="mr-2">Ver Projeto</Link>
+                <Link href={"https://github.com/Gabriel-Sales-Mendonca/calculadora"} target="_blank"  rel="noopener noreferrer" className="ml-2">Código</Link>
               </div>
             </div>
           </div>
           <div>
             <div className="image-projects">
-              <Image src={EthereumImage} alt="Projeto Página sobre o Ethereum" />
+              <Link href={"https://eth-gabrielsales.netlify.app/"} target="_blank" rel="noopener noreferrer" className="mr-2">
+                <Image src={EthereumImage} alt="Projeto Página sobre o Ethereum" />
+              </Link>
             </div>
             <div className="desc-projects">
               <h3><span>Frontend</span> - Página sobre o Ethereum</h3>
@@ -145,8 +153,8 @@ export default function Home() {
               <span>HTML | CSS</span>
 
               <div className="flex justify-center">
-                <button className="mr-2">Ver Projeto</button>
-                <button className="ml-2">Código</button>
+                <Link href={"https://eth-gabrielsales.netlify.app/"} target="_blank" rel="noopener noreferrer" className="mr-2">Ver Projeto</Link>
+                <Link href={"https://github.com/Gabriel-Sales-Mendonca/landing-page-ethereum"} target="_blank"  rel="noopener noreferrer" className="ml-2">Código</Link>
               </div>
             </div>
           </div>
