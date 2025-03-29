@@ -28,9 +28,15 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-[10px]">Desenvolvedor Full Stack</h2>
 
             <div className="flex mb-[30px] space-x-4">
-              <Image src={GithubImage} alt="GitHub" width={40} height={40} className="rounded-full" />
-              <Image src={LinkedinImage} alt="GitHub" width={40} height={40} />
-              <Image src={WhatsappImage} alt="GitHub" width={40} height={40} className="rounded-t-full rounded-r-full" />
+              <Link href={"https://github.com/Gabriel-Sales-Mendonca"} target="_blank">
+                <Image src={GithubImage} alt="GitHub" width={40} height={40} className="rounded-full" />
+              </Link>
+              <Link href={"https://www.linkedin.com/in/gabriel-sales-mendon%C3%A7a/"} target="_blank">
+                <Image src={LinkedinImage} alt="Linkedin" width={40} height={40} />
+              </Link>
+              <Link href={"https://api.whatsapp.com/send?phone=31986829606&text=sua%20mensagem"} target="_blank">
+                <Image src={WhatsappImage} alt="Whatsapp" width={40} height={40} className="rounded-t-full rounded-r-full" />
+              </Link>
             </div>
 
             <p className="text-xl mt-[10px] mb-[20px] bg-zinc-600 rounded-[10px] p-5">Sou desenvolvedor Full stack com experiência prática em backend com Spring Boot e Express.js, e interfaces modernas com React.js e Next.js.<br />
@@ -68,7 +74,11 @@ export default function Home() {
       </div>
 
         <div className="mt-[-70px] z-100">
-          <div className="text-white w-full text-center text-xl">Role para baixo</div>
+          <div className="text-white w-full text-center text-xl flex justify-center">
+            <Link href={"#projects"} className="bg-zinc-600 hover:bg-gray-700 px-4 py-1 rounded-xl">
+              Ver Projetos
+            </Link>
+          </div>
 
           <div className="flex justify-center items-center text-white">
             <div className="animate-bounce">
