@@ -58,11 +58,11 @@ body {
   @apply bg-white rounded-xl w-30 cursor-pointer text-black hover:bg-blue-700 hover:text-white
 }
 
-.section-technologies > * {
-  @apply mx-[40px] w-[30%]
+.section-technologies > div {
+  @apply mx-[40px] w-[30%] mt-[10%]
 }
 
-.section-technologies > * > h3 {
+.section-technologies > div > h3 {
   @apply text-center
 }
 
