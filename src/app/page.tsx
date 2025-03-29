@@ -37,7 +37,7 @@ export default function Home() {
             Tenho familiaridade com bancos de dados relacionais e NoSQL como MySQL, Oracle e MongoDB.
             </p>
 
-            <button className="flex bg-zinc-600 text-white text-base py-2 px-4 rounded-lg cursor-pointer hover:bg-gray-700">Download CV <svg xmlns="http://www.w3.org/2000/svg" className="ml-[10px]" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></button>
+            <a href="/assets/pdfs/curriculo-gabriel-sales.pdf" download="curriculo-gabriel-sales.pdf" className="w-50 flex justify-center items-center bg-zinc-600 text-white text-base py-2 px-4 rounded-lg cursor-pointer hover:bg-gray-700">Download CV <svg xmlns="http://www.w3.org/2000/svg" className="ml-[10px]" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></a>
           </div>
 
           <div className="text-white w-[35%] h-full flex flex-col">
