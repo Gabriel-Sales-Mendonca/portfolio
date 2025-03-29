@@ -27,11 +27,11 @@ body {
 }
 
 .image-projects {
-  @apply h-[50%] 
+  @apply h-[50%] cursor-pointer overflow-hidden
 }
 
 .image-projects > img {
-  @apply rounded-t-3xl
+  @apply rounded-t-3xl hover:brightness-125
 }
 
 .desc-projects {
@@ -42,12 +42,20 @@ body {
   @apply text-xl font-bold
 }
 
+.desc-projects > h3 > span {
+  @apply bg-white text-black px-2 rounded-xl
+}
+
 .desc-projects > p {
   @apply text-base m-2 text-justify
 }
 
 .desc-projects > span {
   @apply text-base font-bold m-2
+}
+
+.desc-projects button {
+  @apply bg-white rounded-xl w-30 cursor-pointer text-black hover:bg-blue-700 hover:text-white
 }
 
 .section-technologies > * {

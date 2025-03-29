@@ -83,17 +83,20 @@ export default function Home() {
 
         <div className="section-projects text-black w-full px-[8%] flex flex-grow flex-wrap justify-center items-center">
           <div>
-            <div className="image-projects">
+            <div className="image-projects relative group">
               <Image src={ControlaEstoqueImage} alt="Projeto Controla Estoque" />
             </div>
             <div className="desc-projects">
-              <h3>Controle de Estoque</h3>
+              <h3><span>Full Stack</span> - Controle de Estoque</h3>
+
               <p>Gerenciador de estoque, que inclui autenticação via <span className="font-bold">JWT</span>, geração de hash para senhas, organização de Produtos por Categorias, além do controle de estoque. Fiz <span className="font-bold">API e Front</span>.</p>
+
               <span>Node.js | React | MongoDB | Axios</span>
+
               <div className="flex justify-center">
-              <button className="bg-white rounded-xl w-30 cursor-pointer text-black hover:bg-blue-700 hover:text-white mr-2">Deploy</button>
-              <button className="bg-white rounded-xl w-30 cursor-pointer text-black hover:bg-blue-700 hover:text-white ml-2">GitHub</button>
-            </div>
+                <button className="mr-2">Ver Projeto</button>
+                <button className="ml-2">Código</button>
+              </div>
             </div>
           </div>
           <div>
@@ -101,13 +104,16 @@ export default function Home() {
               <Image src={ListaDeTarefasImage} alt="Projeto Lista de Tarefas" />
             </div>
             <div className="desc-projects">
-              <h3>Lista de Tarefas</h3>
+              <h3><span>Frontend</span> - Lista de Tarefas</h3>
+
               <p className="">Gerenciador de Tarefas, que permite ao usuário cadastrar, editar e excluir tarefas.</p>
+
               <span>React | JavaScript | CSS</span>
+
               <div className="flex justify-center text-black">
-              <button className="bg-white rounded-xl w-30 cursor-pointer hover:bg-blue-700 hover:text-white mr-2">Deploy</button>
-              <button className="bg-white rounded-xl w-30 cursor-pointer hover:bg-blue-700 hover:text-white ml-2">GitHub</button>
-            </div>
+                <button className="mr-2">Ver Projeto</button>
+                <button className="ml-2">Código</button>
+              </div>
             </div>
           </div>
           <div>
@@ -115,9 +121,16 @@ export default function Home() {
               <Image src={CalculadoraImage} alt="Projeto Calculadora" />
             </div>
             <div className="desc-projects">
-              <h3>Calculadora</h3>
+              <h3><span>Frontend</span> - Calculadora</h3>
+
               <p className="">Calculadora que aceita expressões matemáticas para cálculo.</p>
+
               <span>JavaScript | HTML | CSS</span>
+
+              <div className="flex justify-center">
+                <button className="mr-2">Ver Projeto</button>
+                <button className="ml-2">Código</button>
+              </div>
             </div>
           </div>
           <div>
@@ -125,9 +138,16 @@ export default function Home() {
               <Image src={EthereumImage} alt="Projeto Página sobre o Ethereum" />
             </div>
             <div className="desc-projects">
-              <h3>Página sobre o Ethereum</h3>
+              <h3><span>Frontend</span> - Página sobre o Ethereum</h3>
+
               <p className="">Landing Page, focada em demonstrar minhas habilidades com HTML e CSS puro e com a Responsividade em páginas WEB.</p>
+
               <span>HTML | CSS</span>
+
+              <div className="flex justify-center">
+                <button className="mr-2">Ver Projeto</button>
+                <button className="ml-2">Código</button>
+              </div>
             </div>
           </div>
 
