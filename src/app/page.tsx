@@ -1,3 +1,5 @@
+import { Button } from "@/components/ui/button"
+import ThemeToggle from "./theme-toggle"
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,17 +15,18 @@ import EthereumImage from "../../public/assets/images/ethereum.jpg"
 export default function Home() {
   return (
     <div>
-      <nav className="navigation fixed top-0 w-full h-[70px] flex justify-center items-center text-white z-10">
+      <nav className="navigation fixed top-0 w-full h-[70px] flex justify-center items-center text-white  transition-all duration-300 z-10">
         <div className="h-[50px] flex items-center bg-zinc-700 rounded-full">
           <Link href={"#home"}>Home</Link>
           <Link href={"#projects"}>Projetos</Link>
           <Link href={"#technologies"}>Tecnologias</Link>
+          <ThemeToggle />
         </div>
       </nav>
 
       <div id="home" className="px-[8%] h-screen text-2xl flex flex-col justify-center">
         <div className="flex">
-          <div className="w-[65%] p-[30px] text-white">
+          <div className="w-[65%] p-[30px] text-black dark:text-white">
             <h1 className="text-6xl font-bold text-blue-600">Gabriel Sales</h1>
             <h2 className="text-3xl font-bold mb-[10px]">Desenvolvedor Full Stack</h2>
 
@@ -39,21 +42,21 @@ export default function Home() {
               </Link>
             </div>
 
-            <p className="text-xl mt-[10px] mb-[20px] bg-zinc-600 rounded-[10px] p-5">Sou desenvolvedor Full stack com experiência prática em backend com Spring Boot e Express.js, e interfaces modernas com React.js e Next.js.<br />
+            <p className="text-xl text-white mt-[10px] mb-[20px] bg-zinc-600 rounded-[10px] p-5">Sou desenvolvedor Full stack com experiência prática em backend com Spring Boot e Express.js, e interfaces modernas com React.js e Next.js.<br />
             Tenho familiaridade com bancos de dados relacionais e NoSQL como MySQL, Oracle e MongoDB.
             </p>
 
             <a href="/assets/pdfs/curriculo-gabriel-sales.pdf" download="curriculo-gabriel-sales.pdf" className="w-50 flex justify-center items-center bg-zinc-600 text-white text-base py-2 px-4 rounded-lg cursor-pointer hover:bg-gray-700">Download CV <svg xmlns="http://www.w3.org/2000/svg" className="ml-[10px]" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></a>
           </div>
 
-          <div className="text-white w-[35%] h-full flex flex-col">
+          <div className="text-white border-1 border-black rounded-[20px] w-[35%] h-full flex flex-col">
             {/*<Image src={ComputerImage} alt="Minha imagem" width={500} height={500} className="image rounded-full" />*/}
-            <div className="bg-blue-700 w-full h-[100px] font-bold flex justify-center items-center rounded-t-[20px]">
+            <div className="bg-blue-700 text-white w-full h-[100px] font-bold flex justify-center items-center rounded-t-[20px]">
               <h2 className="text-2xl">
                 Estágio - Desenvolvedor Java
               </h2>
             </div>
-            <div className="bg-zinc-100 flex-grow rounded-b-[20px] text-black text-base p-3">
+            <div className="bg-gray-200 dark:bg-zinc-100 flex-grow rounded-b-[20px] text-black text-base p-3">
               <p><span className="font-bold">Início:</span> Nov/2024 - <span className="font-bold">Fim:</span> Atual</p>
               <p><span className="font-bold">Empresa:</span> Intercomex LTDA.</p><br />
 
@@ -88,8 +91,8 @@ export default function Home() {
         </div>
 
 
-      <section id="projects" className="bg-white text-white w-full py-[80px] flex flex-col">
-        <h2 className="text-4xl font-bold m-auto w-1/2 text-center text-blue-700">Meus Projetos</h2>
+      <section id="projects" className="bg-zinc-800 dark:bg-white text-white w-full py-[80px] flex flex-col">
+        <h2 className="text-4xl font-bold m-auto w-1/2 text-center dark:text-blue-700">Meus Projetos</h2>
 
         <div className="section-projects text-black w-full px-[8%] flex flex-grow flex-wrap justify-center items-center">
           <div>
@@ -172,7 +175,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="technologies" className="text-white w-full min-h-screen pt-[100px] flex flex-col">
+      <section id="technologies" className="text-zinc-800 text-black dark:text-white w-full min-h-screen pt-[100px] flex flex-col">
         <h2 className="text-4xl font-bold m-auto w-1/2 text-center">Tecnologias que domino</h2>
         <div className="section-technologies flex flex-grow w-full px-[8%] mt-[30px] font-mono">
           <div>
@@ -211,6 +214,7 @@ export default function Home() {
             <div className="show-tec flex flex-wrap justify-center">
               <span>MySQL</span>
               <span>MongoDB Atlas</span>
+              <span>Oracle</span>
             </div>
           </div>
         </div>
