@@ -5,7 +5,6 @@ import { ThemeProvider } from "next-themes";
 export const metadata: Metadata = {
   title: "Portfólio",
   description: "Portfólio de Gabriel Sales",
-  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({
