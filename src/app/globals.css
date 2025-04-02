@@ -5,6 +5,12 @@
 /*---break---*/
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --breakpoint-xl: 70rem;
+  --breakpoint-lg: 40rem;
+  --breakpoint-md: 26.25rem;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -19,7 +25,7 @@ body {
 }
 
 .navigation > div > a {
-  @apply h-[50px] flex items-center px-4 rounded-full
+  @apply h-[50px] flex items-center px-4 max-md:px-2 rounded-full
 }
 
 .navigation > div > a:hover {
@@ -27,11 +33,11 @@ body {
 }
 
 .section-projects > div {
-  @apply w-[400px] h-[500px] m-3 rounded-3xl text-center flex flex-col justify-between overflow-hidden transition-transform duration-300 hover:scale-105
+  @apply w-[400px] h-[500px] max-lg:h-[550px] max-md:h-[550px] m-3 rounded-3xl text-center flex flex-col justify-between overflow-hidden transition-transform duration-300 hover:scale-105
 }
 
 .image-projects {
-  @apply h-[50%] cursor-pointer overflow-hidden
+  @apply h-[50%] max-md:h-[46%] cursor-pointer overflow-hidden
 }
 
 .image-projects img {
@@ -39,7 +45,7 @@ body {
 }
 
 .desc-projects {
-  @apply bg-zinc-200 dark:bg-zinc-700 dark:text-white h-[50%] rounded-b-3xl p-2 flex flex-col justify-between
+  @apply bg-zinc-200 dark:bg-zinc-700 dark:text-white h-[50%] max-md:h-[64%] rounded-b-3xl p-2 flex flex-col justify-between
 }
 
 .desc-projects > h3 {
@@ -63,7 +69,7 @@ body {
 }
 
 .section-technologies > div {
-  @apply mx-[40px] w-[30%] mt-[10%]
+  @apply mx-[40px] max-lg:mx-0 w-[30%] max-xl:w-[100%] mt-[10%]
 }
 
 .section-technologies > div > h3 {
@@ -77,6 +83,8 @@ body {
 .image {
   box-shadow: 0px 0px 20px 15px rgba(43, 43, 43, 0.5); /*rgba(0, 0, 0, 0.5)*/
 }
+
+
 
 /*---break---*/
 

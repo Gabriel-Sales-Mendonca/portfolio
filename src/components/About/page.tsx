@@ -7,9 +7,9 @@ import WhatsappImage from "../../../public/assets/images/icon-whatsapp.png";
 
 export default function About() {
     return (
-        <div className="w-[65%] p-[30px] text-black dark:text-white">
-        <h1 className="text-6xl font-bold text-blue-600">Gabriel Sales</h1>
-        <h2 className="text-3xl font-bold mb-[10px]">Desenvolvedor Full Stack</h2>
+        <div className="w-[65%] max-xl:w-[100%] max-xl:p-0 max-xl:pb-5 p-[30px] text-black dark:text-white">
+        <h1 className="text-6xl max-md:text-4xl font-bold text-blue-600">Gabriel Sales</h1>
+        <h2 className="text-3xl max-md:text-xl font-bold mb-[10px]">Desenvolvedor Full Stack</h2>
 
         <div className="flex mb-[30px] space-x-4">
           <Link href={"https://github.com/Gabriel-Sales-Mendonca"} target="_blank">

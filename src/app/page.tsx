@@ -11,14 +11,14 @@ export default function Home() {
     <div>
       <Menu />
 
-      <div id="about" className="px-[8%] h-screen text-2xl flex flex-col justify-center">
-        <div className="flex">
+      <div id="about" className="max-xl:pt-[90px] px-[8%] max-lg:px-4 min-h-screen text-2xl flex flex-col justify-center">
+        <div className="flex max-xl:flex-col">
           <About />
           <MainExperience />
         </div>
       </div>
 
-        <div className="mt-[-70px] z-100">
+        <div className="mt-[-70px] max-xl:mt-[10px] z-100">
           <div className="text-white w-full text-center text-xl flex justify-center">
             <Link href={"#projects"} className="bg-zinc-600 hover:bg-gray-700 px-4 py-1 rounded-xl">
               Ver Projetos

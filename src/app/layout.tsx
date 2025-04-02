@@ -5,6 +5,7 @@ import { ThemeProvider } from "next-themes";
 export const metadata: Metadata = {
   title: "Portfólio",
   description: "Portfólio de Gabriel Sales",
+  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({
@@ -14,6 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
       <body>
         <ThemeProvider attribute="class" enableSystem={false} defaultTheme="dark" >
           {children}

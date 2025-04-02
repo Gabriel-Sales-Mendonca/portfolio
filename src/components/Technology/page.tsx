@@ -1,8 +1,8 @@
 export default function Technology() {
     return (
-        <section id="technologies" className="text-zinc-800 text-black dark:text-white w-full min-h-screen pt-[100px] flex flex-col">
-        <h2 className="text-4xl font-bold m-auto w-1/2 text-center">Tecnologias que domino</h2>
-        <div className="section-technologies flex flex-grow w-full px-[8%] mt-[30px] font-mono">
+      <section id="technologies" className="text-zinc-800 text-black dark:text-white w-full min-h-screen py-[100px] flex flex-col">
+        <h2 className="text-4xl max-md:text-3xl font-bold m-auto max-md:m-0 w-1/2 max-md:w-[100%] text-center">Tecnologias que domino</h2>
+        <div className="section-technologies flex flex-grow max-xl:flex-col max-lg:items-center w-full px-[8%] mt-[30px] font-mono">
           <div>
             <h3 className="font-bold text-2xl">🧑‍💻 Backend</h3>
             <div className="show-tec flex flex-wrap justify-center">
