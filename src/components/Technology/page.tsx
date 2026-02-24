@@ -7,15 +7,22 @@ export default function Technology() {
             <h3 className="font-bold text-2xl">🧑‍💻 Backend</h3>
             <div className="show-tec flex flex-wrap justify-center">
               <span>Java</span>
-              <span>Spring Boot</span>
+              <span>RabbitMQ / Kafka</span>
+              <span>Spring Framework</span>
+              <span>Spring Security</span>
+              <span>Feign Client</span>
               <span>JPA</span>
               <span>Hibernate</span>
               <span>JDBC</span>
+              <span>JUnit</span>
+              <span>Mockito</span>
               <span>JWT</span>
               <span>JavaScript</span>
               <span>Node.js</span>
+              <span>Nest.js</span>
               <span>Express</span>
               <span>mongoose</span>
+              <span>Docker</span>
             </div>
           </div>
           <div>
@@ -37,9 +44,11 @@ export default function Technology() {
               <h3 className="font-bold text-2xl">Banco de dados</h3>
             </div>
             <div className="show-tec flex flex-wrap justify-center">
-              <span>MySQL</span>
-              <span>MongoDB Atlas</span>
+              <span>Postgres</span>
+              <span>MongoDB</span>
+              <span>Redis</span>
               <span>Oracle</span>
+              <span>MySQL</span>
             </div>
           </div>
         </div>
