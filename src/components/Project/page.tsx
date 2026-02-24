@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
+import BarbeariaPorAssinaturaImage from "../../../public/assets/images/barbearia-por-assinatura.png";
 import ControlaEstoqueImage from "../../../public/assets/images/controlaestoque.jpg";
 import ListaDeTarefasImage from "../../../public/assets/images/lista-de-tarefas.png";
 import CalculadoraImage from "../../../public/assets/images/calculadora.jpg";
@@ -12,6 +13,25 @@ export default function Project() {
             <h2 className="text-4xl font-bold m-auto w-1/2 text-center dark:text-blue-700">Meus Projetos</h2>
     
             <div className="section-projects text-black w-full px-[8%] max-md:px-0 flex flex-grow flex-wrap justify-center items-center">
+                <div>
+                    <div className="image-projects relative group">
+                        <Link href={"https://github.com/Gabriel-Sales-Mendonca/api-barbearia-por-assinatura"} target="_blank" rel="noopener noreferrer" className="mr-2">
+                        <Image src={BarbeariaPorAssinaturaImage} alt="Projeto Barbearia por assinatura" />
+                        </Link>
+                    </div>
+                    <div className="desc-projects">
+                        <h3><span>Full Stack</span> - Barbearia por assinatura</h3>
+        
+                        <p>Sistema para oferecer planos por assinatura para clientes, o sistema gerencia e valida os planos, utiliza a API do MailSender para enviar e-mails e a Claudinary para armazenar documentos. Fiz <span className="font-bold">API e Front</span>.</p>    
+        
+                        <span>Spring Boot | Next.js | Postgres</span>
+        
+                        <div className="flex justify-center">
+                            <Link href={"https://github.com/Gabriel-Sales-Mendonca/api-barbearia-por-assinatura"} target="_blank" rel="noopener noreferrer" className="mr-2">Ver Projeto</Link>
+                            <Link href={"https://github.com/Gabriel-Sales-Mendonca/api-barbearia-por-assinatura"} target="_blank"  rel="noopener noreferrer" className="ml-2">Código</Link>
+                        </div>
+                    </div>
+                </div>
                 <div>
                     <div className="image-projects relative group">
                         <Link href={"https://controlaestoque.netlify.app/"} target="_blank" rel="noopener noreferrer" className="mr-2">
